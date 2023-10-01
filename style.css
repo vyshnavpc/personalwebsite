@@ -67,6 +67,11 @@ span {
     width: 25rem;
 }
 
+.socialmeadia i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .right {
     width: 50%;
     height: 100vh;
@@ -106,7 +111,8 @@ span {
 .download-button {
     padding: 10px 30px;
     border-radius: 10px;
-    color: white;rgba(255, 255, 255, 0.286);
+    color: white;
+    rgba(255, 255, 255, 0.286);
     background-color: blue;
     border: none;
 }
@@ -118,10 +124,58 @@ span {
 }
 
 
-.back-to-top{
+.back-to-top, .socialmeadia-icons {
     text-decoration: none;
-    position: fixed;
     color: white;
+}
+.back-to-top{
+    position: fixed;
     bottom: 30px;
     right: 30px;
+}
+
+
+@media (max-width:1100px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        position: initial;
+        width: 100%;
+        height: auto;
+        place-items: initial;
+        margin-top: 100px;
+    }
+
+    .section1 {
+        width: 100%;
+    }
+
+    .section2 {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        place-items: initial;
+        height: auto;
+    }
+
+    .aboutme,
+    .projects,
+    .viewresume,
+    .services,
+    .contacts {
+        min-height: auto;
+        margin: 50px 0;
+    }
+
+    .socialmeadia {
+        margin-top: 20px;
+    }
+    .service-card{
+        margin: 10px;
+    }
+
 }
