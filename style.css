@@ -13,11 +13,14 @@ html {
     font-family: sans-serif;
     font-weight: 200;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 
 .title {
     color: rgb(255, 255, 255);
     font-weight: 400;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 
 span {
@@ -28,13 +31,16 @@ span {
 .container {
     display: flex;
     width: 85%;
+    justify-content: flex-end;
 }
 
 .left {
-    width: 50%;
+    min-width: 50%;
     height: 100vh;
     display: grid;
     place-items: center;
+    position: fixed;
+    left: 0;
 }
 
 .section1 {
@@ -72,6 +78,50 @@ span {
     width: 90%;
 }
 
-.aboutme {
+.aboutme,
+.projects,
+.viewresume,
+.services,
+.contacts {
     width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+.text:hover {
+    color: white;
+    cursor: auto;
+}
+
+.end {
+    /* contend end line */
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.download-button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;rgba(255, 255, 255, 0.286);
+    background-color: blue;
+    border: none;
+}
+
+.service-card {
+    width: 95%;
+    background-color: #ffffff09;
+    padding: 20px;
+}
+
+
+.back-to-top{
+    text-decoration: none;
+    position: fixed;
+    color: white;
+    bottom: 30px;
+    right: 30px;
 }
