@@ -2,6 +2,7 @@ let element1 = document.getElementById('service-card1')
 let element2 = document.getElementById('service-card2')
 let element3 = document.getElementById('service-card3')
 let elementHeight = element1.clientHeight;
+document.addEventListener('DOMContentLoaded', animate)
 document.addEventListener('scroll', animate)
 
 function animate() {
