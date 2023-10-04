@@ -6,20 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vyshnav p c</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="container">
         <section class="left">
             <div class="section1">
-                <div class="name title">Vyshnav p c</div>
-                <div class="domain text">MERN Stack Developer</div>
-                <div class="discription text">Passionate self taught MERN Stack Developer interesting in cybersecurity,
+                <div class="name title hoverable" id="name">Vyshnav p c</div>
+                <div class="domain text" id="title">MERN Stack Developer</div>
+                <div class="discription text" id="description">Passionate self taught MERN Stack Developer interesting
+                    in cybersecurity,
                     solving complex problem using new technologies</div>
+                <div class="options">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">contacts</a>
+                </div>
+                <div class="options">
+                    <i class="fa fa-phone" style="font-size:14px;color:rgb(255, 255, 255)"> +91 8086064478</i>
+                    <i class="fa fa-envelope" style="font-size:14px;color:rgb(255, 255, 255)"> vyshnavpcnaravoor@gmailcom</i>
+                </div>
             </div>
             <div class="socialmeadia">
-                <div class="github text "><a href="https://github.com/vyshnavpc" target="_blank" class="socialmeadia-icons"><i class="fa-brands fa-github"></i></a></div>
-                <div class="linkedin text"><a href="https://linkedin.com/in/vyshnav-pc-5567ba242" target="_blank"  class="socialmeadia-icons"><i class="fa-brands fa-linkedin"></i></a></div>
+                <div class="github text hoverable"><a href="https://github.com/vyshnavpc" target="_blank"
+                        class="socialmeadia-icons"><i class="fa-brands fa-github"></i></a></div>
+                <div class="linkedin text hoverable"><a href="https://linkedin.com/in/vyshnav-pc-5567ba242"
+                        target="_blank" class="socialmeadia-icons "><i class="fa-brands fa-linkedin"></i></a></div>
             </div>
         </section>
         <section class="right">
@@ -27,7 +41,7 @@
                 <div class="aboutme" id="about">
                     <div>
                         <h4 class="title">ABOUT</h4>
-                        <p class="text">
+                        <p class="text hoverable">
 
                             Back in 2018, i decided to take bca course as my interest in <span>programming</span>
                             this one is the best experience in my life as a member of middle class family i am struggle
@@ -47,12 +61,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="projects">
+                <div id="projects" class="projects">
                     <div>
                         <h4 class="title">PROJECTS</h4>
                         <div class="project-card">
                             <span>1 . Daily Dev Doubts</span>
-                            <p class="description text">
+                            <p class="description text hoverable">
                                 In this application user can post their question and other user can answer for that
                                 specific
                                 question,
@@ -66,7 +80,7 @@
                                 based on their activity
                             </p>
                             <span>Technology used in this application</span>
-                            <ul class="text">
+                            <ul class="text hoverable">
                                 <li>React</li>
                                 <li>Redux</li>
                                 <li>Jwt</li>
@@ -82,7 +96,7 @@
                         <div class="end"></div>
                         <div class="project-card">
                             <span>2 . FoodZone</span>
-                            <p class="description text">
+                            <p class="description text hoverable">
                                 In this application user can book their food and table in restaurant with the time of
                                 they booked
                                 and restaurant can accept the request based on the table, implemented table booking
@@ -91,7 +105,7 @@
                                 application
                             </p>
                             <span>Technology used in this application</span>
-                            <ul class="text">
+                            <ul class="text hoverable">
                                 <li>Node.js</li>
                                 <li>Express.js</li>
                                 <li>Hbs</li>
@@ -101,44 +115,56 @@
                                 <li>Pm2</li>
                             </ul>
                         </div>
-                        <div class="end"></div>
                     </div>
                 </div>
-                <div class="viewresume">
-                    <div>
-                        <h4><span>Download Resume</span></h4>
-                        <Button class="download-button">Download</Button>
-                    </div>
-                </div>
-                <div class="services">
+                <div id="services" class="services">
                     <div>
                         <h4 class="title">SERVICES</h4>
                         <div class="services">
-                            <div class="service-card">
+                            <div id="service-card1" class="service-card">
                                 <h3><span>Web Development</span></h3>
-                                <p class="text">Providing Web developement as a service, building application using MERN
+                                <p class="text hoverable">Providing Web developement as a service, building application
+                                    using MERN
                                     (Mongodb,express.js,React,Nodejs) Stack </p>
                             </div>
-                            <div class="service-card">
+                            <div id="service-card2" class="service-card">
                                 <h3><span>Web Desinging</span></h3>
-                                <p class="text">Providing Web Desinging, building ui for application using figma and
+                                <p class="text hoverable">Providing Web Desinging, building ui for application using
+                                    figma and
                                     convert it to responsive web pages</p>
                             </div>
-                            <div class="service-card">
+                            <div id="service-card3" class="service-card">
                                 <h3><span>Backend Developement</span></h3>
-                                <p class="text">Buiding backend application using Node.js and mongodb database </p>
+                                <p class="text hoverable">Buiding backend application using Node.js and mongodb database
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="contacts">
-                    constacts
+                <div id="contacts" class="contact">
+                    <form action="https://formsubmit.co/e9b7473dcd30baecae848e3009838034" method="POST">
+                        <h4>CONTACT ME</h4>
+                        <label for="username">Name</label>
+                        <input type="text" id="username" name="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" required cols="30" rows="10"></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
             <a href="#about" class="back-to-top">back to top</a>
         </section>
+
     </div>
+
 </body>
 <script src="https://kit.fontawesome.com/0d97526b57.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="./index.js"></script>
 
 </html>
